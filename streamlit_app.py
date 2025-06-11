@@ -311,10 +311,10 @@ def dosimetry_section():
         ctdi_center = st.number_input("CTDI Center (mGy)", min_value=0.0, step=0.1, format="%.2f")
         
         st.write("**Peripheral CTDI Measurements:**")
-        ctdi_top = st.number_input("CTDI Top (mGy)", min_value=0.0, step=0.1, format="%.2f")
-        ctdi_bottom = st.number_input("CTDI Bottom (mGy)", min_value=0.0, step=0.1, format="%.2f")
-        ctdi_left = st.number_input("CTDI Left (mGy)", min_value=0.0, step=0.1, format="%.2f")
-        ctdi_right = st.number_input("CTDI Right (mGy)", min_value=0.0, step=0.1, format="%.2f")
+        ctdi_top = st.number_input("Exposure Top (mR)", min_value=0.0, step=0.1, format="%.2f")
+        ctdi_bottom = st.number_input("Exposure Bottom (mR)", min_value=0.0, step=0.1, format="%.2f")
+        ctdi_left = st.number_input("Exposure Left (mR)", min_value=0.0, step=0.1, format="%.2f")
+        ctdi_right = st.number_input("Exposure Right (mR)", min_value=0.0, step=0.1, format="%.2f")
         
         ctdi_periphery_avg = (ctdi_top + ctdi_bottom + ctdi_left + ctdi_right) / 4
         
